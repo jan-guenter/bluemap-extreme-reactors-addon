@@ -3,11 +3,12 @@
 A Java 21 BlueMap add-on for the exact `bigreactors-1.21.1-2.4.28` profile in All the Mons
 `1.2.0` / Minecraft `1.21.1`.
 
-Status: visual-test prototype. The exact artifact gate admits only Extreme
-Reactors `1.21.1-2.4.28` with ZeroCore `1.21.1-2.4.21`. For basic and reinforced
-turbine shafts, blades, and glass, the renderer reconstructs the client-only
-neighbor state. It displays the installed rotor models in a deterministic
-stopped pose and the installed 64-way connected-glass models.
+Status: owner-accepted `0.1.0-alpha.1` release candidate. The exact artifact
+gate admits only Extreme Reactors `1.21.1-2.4.28` with ZeroCore `1.21.1-2.4.21`.
+For basic and reinforced turbine shafts, blades, and glass, the renderer
+reconstructs the client-only neighbor state. It displays the installed rotor
+models in a deterministic stopped pose and the installed 64-way
+connected-glass models.
 
 ## Build
 

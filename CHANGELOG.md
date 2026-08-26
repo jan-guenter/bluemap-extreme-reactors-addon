@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.0-alpha.1 - 2026-08-26
 
 - Generated a fail-closed Java 21 BlueMap add-on seed for `bigreactors-1.21.1-2.4.28`.
 - Restored the contextual basic and reinforced turbine shaft and blade models
