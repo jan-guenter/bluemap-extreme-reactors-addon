@@ -1,10 +1,81 @@
 {
-  "accepted_staging_entries": null,
-  "final_release_artifacts": null,
-  "note": "Populate only after owner visual acceptance; this file is not packaged.",
-  "owner_accepted_staging": null,
-  "repository": "https://github.com/jan-guenter/bluemap-extreme-reactors-addon",
   "schema_version": 1,
-  "status": "prototype-not-owner-accepted",
-  "version": "0.1.0-SNAPSHOT"
+  "status": "owner-accepted-release-candidate",
+  "version": "0.1.0-alpha.1",
+  "release_date": "2026-08-26",
+  "repository": "https://github.com/jan-guenter/bluemap-extreme-reactors-addon",
+  "tag": "v0.1.0-alpha.1",
+  "maven_coordinate": "io.github.jan-guenter:bluemap-extreme-reactors-addon:0.1.0-alpha.1",
+  "owner_accepted_staging": {
+    "accepted_at": "2026-08-26",
+    "commit": "33aaccd0ddc1e54dc1a767768e59ef99d90b2ba3",
+    "tree": "bb930994bb686556c9940ca88af127f9db5c32c5",
+    "production_jar_size": 92011,
+    "production_jar_sha256": "b5442504b0320b971328304c6533c2e69bfd311080698af5caee10a038d6f4f7",
+    "accepted_at_map": "bigreactors_review",
+    "visual_acceptance": true
+  },
+  "accepted_staging_entries": {
+    "path": "provenance/accepted-staging-entries.sha256",
+    "entry_count": 31,
+    "sha256": "404b6e50dc10699b04c36e3f0c486a79327a8728015db32ad3413080aa3a893c"
+  },
+  "final_release_artifacts": {
+    "production_jar": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1.jar",
+      "size": 92010,
+      "sha256": "60eaf0b401742fbc40a8500948234e72010b4a8224395893af8b521b2aed0d24"
+    },
+    "sources_jar": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1-sources.jar",
+      "size": 60879,
+      "sha256": "10eefcfc78fb589cb157b11e84026463cf59937aa6508ff42b719f42dcad7774"
+    },
+    "pom": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1.pom",
+      "size": 1371,
+      "sha256": "bd8a6380c0ae036e2523d843957c8bdbdb9d876d071aba229daee3af2d832baa"
+    },
+    "gradle_module": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1.module.json",
+      "size": 2880,
+      "sha256": "7e5de5c86484e0d3ce5ae6e97ad8e81de9235e573e98109de3a7f5290bc2fde0"
+    }
+  },
+  "staged_equivalence": {
+    "entry_manifest": "provenance/accepted-staging-entries.sha256",
+    "identical_non_manifest_entries": 31,
+    "whole_jar_byte_identical": false,
+    "only_changed_entry_bytes": "META-INF/MANIFEST.MF",
+    "change_reason": "Implementation-Version changed from the accepted SNAPSHOT marker to the final release version."
+  },
+  "gallery": {
+    "archive_file_name": "bigreactors-gallery.zip",
+    "size": 5235,
+    "sha256": "ac32372112dd9455d40516b922745304ddf89393dd00d94fcce2921e57d47f1b",
+    "review_cases": 235,
+    "published_as_release_asset": false
+  },
+  "ephemeral_ci_inputs": {
+    "bigreactors": {
+      "curseforge_project": 250277,
+      "curseforge_file": 7344744,
+      "size": 2554779,
+      "sha256": "74fdfdfc91c3c8e5a439d411e6f081d12193635fffe2c55142f2f28f75b9d621"
+    },
+    "zerocore": {
+      "curseforge_project": 247921,
+      "curseforge_file": 7344742,
+      "size": 1551013,
+      "sha256": "54ac755031b05c3a5b6ddfa22dabc45fb3775481041503dcecd75e5e86627779"
+    },
+    "policy": "Downloaded only into the ephemeral runner, verified before use, and never bundled or uploaded."
+  },
+  "verification": {
+    "production_jar_exact_byte_gate": true,
+    "sources_jar_exact_byte_gate": true,
+    "publication_metadata_exact_byte_gate": true,
+    "staged_equivalence_gate": true,
+    "exact_input_gate": true
+  }
 }
