@@ -1,0 +1,6 @@
+{
+  "id": "bluemap-bigreactors",
+  "entrypoint": "io.github.janguenter.bluemap.bigreactors.BlueMapBigReactorsAddon",
+  "dependencies": [],
+  "soft-dependencies": []
+}

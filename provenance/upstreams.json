@@ -1,0 +1,53 @@
+{
+  "artifacts": [
+    {
+      "curseforge_file": 7344744,
+      "curseforge_project": 250277,
+      "download_url": "https://www.curseforge.com/api/v1/mods/250277/files/7344744/download",
+      "evidence": "The All the Mons 1.2.0 staging runtime artifact is byte-identical to the exact CurseForge 250277/7344744 identity preserved in the selected snapshot",
+      "evidence_tier": "T2_ARTIFACT_EXACT",
+      "file_name": "ExtremeReactors2-1.21.1-2.4.28.jar",
+      "key": "bigReactors",
+      "license": "MIT",
+      "mod_id": "bigreactors",
+      "redistributed": false,
+      "sha1": "b017d5d0cf5d5ab5ad5826e3e89f2d861f31d15a",
+      "sha256": "74fdfdfc91c3c8e5a439d411e6f081d12193635fffe2c55142f2f28f75b9d621",
+      "size": 2554779,
+      "version": "1.21.1-2.4.28"
+    },
+    {
+      "curseforge_file": 7344742,
+      "curseforge_project": 247921,
+      "download_url": "https://www.curseforge.com/api/v1/mods/247921/files/7344742/download",
+      "evidence": "The All the Mons 1.2.0 staging runtime artifact is byte-identical to the exact required CurseForge 247921/7344742 dependency identity preserved in the selected snapshot",
+      "evidence_tier": "T2_ARTIFACT_EXACT",
+      "file_name": "ZeroCore2-1.21.1-2.4.21.jar",
+      "key": "zeroCore",
+      "license": "All rights reserved",
+      "mod_id": "zerocore",
+      "redistributed": false,
+      "sha1": "7df2558f45c3e41bebe86a5ee2b28d56007bdbda",
+      "sha256": "54ac755031b05c3a5b6ddfa22dabc45fb3775481041503dcecd75e5e86627779",
+      "size": 1551013,
+      "version": "1.21.1-2.4.21"
+    }
+  ],
+  "bluemap": {
+    "api_commit": "285c9a60eff3ac2b0cab308ce1058d1565be0971",
+    "commit": "9be321df995a1103808621d529eb72773e719d4d",
+    "license": "MIT",
+    "redistributed": false,
+    "version": "5.22-agent.backport-5.22-mc1.21.1-2"
+  },
+  "pack": {
+    "commit": "c7bb230f21d14d26859d0b92548f089b3a493ad9",
+    "minecraft": "1.21.1",
+    "name": "All the Mons",
+    "neoforge": "21.1.248",
+    "version": "1.2.0"
+  },
+  "profile": "bigreactors-1.21.1-2.4.28",
+  "schema": 1,
+  "source_use": "Runtime interfaces and installed resources may be interpreted only after family-specific evidence is recorded; no candidate classes, assets, binaries, source, or captured meshes are packaged."
+}
