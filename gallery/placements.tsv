@@ -1,2 +1,52 @@
 case_id	label	x	y	z	block_state	expected
-stock-control	stone stock rendering control	176	100	175	minecraft:stone	stock-visible
+basic-bearing	basic rotor bearing control	170	102	164	bigreactors:basic_turbinerotorbearing	stock-visible
+basic-shaft-1	basic contextual shaft section 1	170	102	165	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
+basic-blade-1-x--1-1	basic contextual blade span	169	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-1-x--1-2	basic contextual blade span	168	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-1-x-1-1	basic contextual blade span	171	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-1-x-1-2	basic contextual blade span	172	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-shaft-2	basic contextual shaft section 2	170	102	166	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
+basic-blade-2-y--1-1	basic contextual blade span	170	101	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-2-y--1-2	basic contextual blade span	170	100	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-2-y-1-1	basic contextual blade span	170	103	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-2-y-1-2	basic contextual blade span	170	104	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-shaft-3	basic contextual shaft section 3	170	102	167	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
+basic-blade-3-x--1-1	basic contextual blade span	169	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-3-x--1-2	basic contextual blade span	168	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-3-x-1-1	basic contextual blade span	171	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-3-x-1-2	basic contextual blade span	172	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-3-y--1-1	basic contextual blade span	170	101	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-3-y--1-2	basic contextual blade span	170	100	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-3-y-1-1	basic contextual blade span	170	103	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-3-y-1-2	basic contextual blade span	170	104	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-shaft-4	basic contextual shaft section 4	170	102	168	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
+basic-blade-4-y--1-1	basic contextual blade span	170	101	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-4-y--1-2	basic contextual blade span	170	100	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-4-y-1-1	basic contextual blade span	170	103	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-4-y-1-2	basic contextual blade span	170	104	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+reinforced-bearing	reinforced rotor bearing control	180	102	164	bigreactors:reinforced_turbinerotorbearing	stock-visible
+reinforced-shaft-1	reinforced contextual shaft section 1	180	102	165	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
+reinforced-blade-1-x--1-1	reinforced contextual blade span	179	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-1-x--1-2	reinforced contextual blade span	178	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-1-x-1-1	reinforced contextual blade span	181	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-1-x-1-2	reinforced contextual blade span	182	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-shaft-2	reinforced contextual shaft section 2	180	102	166	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
+reinforced-blade-2-y--1-1	reinforced contextual blade span	180	101	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-2-y--1-2	reinforced contextual blade span	180	100	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-2-y-1-1	reinforced contextual blade span	180	103	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-2-y-1-2	reinforced contextual blade span	180	104	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-shaft-3	reinforced contextual shaft section 3	180	102	167	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
+reinforced-blade-3-x--1-1	reinforced contextual blade span	179	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-3-x--1-2	reinforced contextual blade span	178	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-3-x-1-1	reinforced contextual blade span	181	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-3-x-1-2	reinforced contextual blade span	182	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-3-y--1-1	reinforced contextual blade span	180	101	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-3-y--1-2	reinforced contextual blade span	180	100	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-3-y-1-1	reinforced contextual blade span	180	103	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-3-y-1-2	reinforced contextual blade span	180	104	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-shaft-4	reinforced contextual shaft section 4	180	102	168	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
+reinforced-blade-4-y--1-1	reinforced contextual blade span	180	101	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-4-y--1-2	reinforced contextual blade span	180	100	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-4-y-1-1	reinforced contextual blade span	180	103	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-4-y-1-2	reinforced contextual blade span	180	104	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+stock-control	stone stock rendering control	175	100	171	minecraft:stone	stock-visible
