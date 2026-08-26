@@ -9,12 +9,12 @@ import de.bluecolored.bluemap.core.resources.pack.resourcepack.ResourcePack;
 import de.bluecolored.bluemap.core.util.Key;
 import io.github.janguenter.bluemap.bigreactors.activation.AddonRuntime;
 
-/** BlueMap 5.22 registration boundary for static turbine rotors. */
+/** BlueMap 5.22 registration boundary for contextual turbine models. */
 public final class BlueMap522Adapter {
 
     private static final AddonRuntime RUNTIME = AddonRuntime.INSTANCE;
     private static final BlockRendererType RENDERER = new BlockRendererType.Impl(
-            Key.parse("bluemap_bigreactors:turbine_rotor"),
+            Key.parse("bluemap_bigreactors:turbine_context"),
             (pack, gallery, settings) ->
                     new TurbineRotorRenderer(pack, gallery, settings, RUNTIME)
     );

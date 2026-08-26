@@ -5,8 +5,9 @@ A Java 21 BlueMap add-on for the exact `bigreactors-1.21.1-2.4.28` profile in Al
 
 Status: visual-test prototype. The exact artifact gate admits only Extreme
 Reactors `1.21.1-2.4.28` with ZeroCore `1.21.1-2.4.21`. For basic and reinforced
-turbine shafts and blades, the renderer reconstructs the client-only neighbor
-state and displays the installed model in a deterministic stopped pose.
+turbine shafts, blades, and glass, the renderer reconstructs the client-only
+neighbor state. It displays the installed rotor models in a deterministic
+stopped pose and the installed 64-way connected-glass models.
 
 ## Build
 
@@ -29,9 +30,10 @@ Set `-Dbluemap.bigreactors.disabled=true` to leave the exact profile inactive.
 
 ## Scope boundary
 
-The initial implementation is limited to the missing contextual turbine rotor.
-Live contents, fill levels, activity overlays, particles, and animation phase
-stay stock or deterministic-neutral unless the owner explicitly expands scope.
+The initial implementation is limited to the contextual turbine rotor and
+connected turbine glass. Live contents, fill levels, activity overlays,
+particles, and animation phase stay stock or deterministic-neutral unless the
+owner explicitly expands scope.
 
 No Extreme Reactors binary, source, class, asset, captured mesh, or gallery is
 bundled in the add-on.

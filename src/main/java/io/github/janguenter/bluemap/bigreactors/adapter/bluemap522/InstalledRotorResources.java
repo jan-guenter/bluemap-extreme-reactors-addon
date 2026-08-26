@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/** Admits and routes only the exact installed turbine-rotor resource schema. */
+/** Admits and routes the exact installed rotor and turbine-glass resources. */
 final class InstalledRotorResources {
 
     private InstalledRotorResources() {
@@ -26,55 +26,109 @@ final class InstalledRotorResources {
     static Admission inspect(ResourcePack pack) {
         Set<Variant> routed = Collections.newSetFromMap(new IdentityHashMap<>());
         List<Variant> visible = new ArrayList<>();
-        int completedBlocks = 0;
-        for (String blockId : RotorCatalog.BLOCK_IDS) {
-            de.bluecolored.bluemap.core.resources.pack.resourcepack.blockstate.BlockState state =
-                    pack.getBlockStates().get(RotorCatalog.blockKey(blockId));
-            if (state == null || state.getVariants() == null
-                    || state.getMultipart() != null) {
-                return null;
-            }
-            List<Variant> all = new ArrayList<>();
-            state.forEach(all::add);
-            if (all.size() != RotorCatalog.states(blockId).size()) {
-                return null;
-            }
-            for (String modelState : RotorCatalog.states(blockId)) {
-                List<Variant> selected = select(state, blockId, modelState);
-                if (selected.size() != 1) {
-                    return null;
-                }
-                Variant variant = selected.getFirst();
-                if (variant.getRenderer() != BlockRendererType.DEFAULT
-                        || !validModelRoute(blockId, modelState, variant)) {
-                    return null;
-                }
-                routed.add(variant);
-                if (!"hidden".equals(modelState)) {
-                    visible.add(variant);
-                }
-            }
-            completedBlocks++;
-            if (routed.size() != visible.size() + completedBlocks) {
-                return null;
-            }
+        if (!inspectRotors(pack, routed, visible)
+                || !inspectGlass(pack, routed, visible)) {
+            return null;
         }
-        if (routed.size() != 52 || visible.size() != 48) {
+        if (routed.size() != 180 || visible.size() != 176) {
             return null;
         }
         return new Admission(List.copyOf(routed), List.copyOf(visible));
     }
 
+    private static boolean inspectRotors(
+            ResourcePack pack,
+            Set<Variant> routed,
+            List<Variant> visible
+    ) {
+        for (String blockId : RotorCatalog.BLOCK_IDS) {
+            de.bluecolored.bluemap.core.resources.pack.resourcepack.blockstate.BlockState state =
+                    pack.getBlockStates().get(RotorCatalog.blockKey(blockId));
+            if (state == null || state.getVariants() == null
+                    || state.getMultipart() != null) {
+                return false;
+            }
+            List<Variant> all = new ArrayList<>();
+            state.forEach(all::add);
+            if (all.size() != RotorCatalog.states(blockId).size()) {
+                return false;
+            }
+            for (String modelState : RotorCatalog.states(blockId)) {
+                List<Variant> selected = select(
+                        state,
+                        RotorCatalog.blockKey(blockId),
+                        "state",
+                        modelState
+                );
+                if (selected.size() != 1) {
+                    return false;
+                }
+                Variant variant = selected.getFirst();
+                if (variant.getRenderer() != BlockRendererType.DEFAULT
+                        || !validModelRoute(blockId, modelState, variant)) {
+                    return false;
+                }
+                if (!routed.add(variant)) {
+                    return false;
+                }
+                if (!"hidden".equals(modelState)) {
+                    visible.add(variant);
+                }
+            }
+        }
+        return routed.size() == 52 && visible.size() == 48;
+    }
+
+    private static boolean inspectGlass(
+            ResourcePack pack,
+            Set<Variant> routed,
+            List<Variant> visible
+    ) {
+        for (String blockId : GlassCatalog.BLOCK_IDS) {
+            de.bluecolored.bluemap.core.resources.pack.resourcepack.blockstate.BlockState state =
+                    pack.getBlockStates().get(GlassCatalog.blockKey(blockId));
+            if (state == null || state.getVariants() == null
+                    || state.getMultipart() != null) {
+                return false;
+            }
+            List<Variant> all = new ArrayList<>();
+            state.forEach(all::add);
+            if (all.size() != GlassCatalog.STATES.size()) {
+                return false;
+            }
+            for (String modelState : GlassCatalog.STATES) {
+                List<Variant> selected = select(
+                        state,
+                        GlassCatalog.blockKey(blockId),
+                        "facings",
+                        modelState
+                );
+                if (selected.size() != 1) {
+                    return false;
+                }
+                Variant variant = selected.getFirst();
+                if (variant.getRenderer() != BlockRendererType.DEFAULT
+                        || !validGlassModelRoute(blockId, variant)
+                        || !routed.add(variant)) {
+                    return false;
+                }
+                visible.add(variant);
+            }
+        }
+        return routed.size() == 180 && visible.size() == 176;
+    }
+
     private static List<Variant> select(
             de.bluecolored.bluemap.core.resources.pack.resourcepack.blockstate.BlockState state,
-            String blockId,
+            de.bluecolored.bluemap.core.util.Key blockKey,
+            String property,
             String modelState
     ) {
         List<Variant> selected = new ArrayList<>();
         state.forEach(
                 new BlockState(
-                        RotorCatalog.blockKey(blockId),
-                        Map.of("state", modelState)
+                        blockKey,
+                        Map.of(property, modelState)
                 ),
                 0,
                 0,
@@ -98,6 +152,16 @@ final class InstalledRotorResources {
                 ? "rotorshaft_" : "rotorblade_";
         return model.startsWith("bigreactors:block/turbine/" + tier + '/'
                 + component);
+    }
+
+    private static boolean validGlassModelRoute(
+            String blockId,
+            Variant variant
+    ) {
+        String tier = blockId.contains("reinforced") ? "reinforced" : "basic";
+        return variant.getModel().getFormatted().startsWith(
+                "bigreactors:block/turbine/" + tier + "/glass_"
+        );
     }
 
     static boolean bakedModelsValid(ResourcePack pack, Admission admission) {

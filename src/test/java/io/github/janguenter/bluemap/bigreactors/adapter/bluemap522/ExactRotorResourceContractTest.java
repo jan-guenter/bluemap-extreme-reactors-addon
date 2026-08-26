@@ -69,6 +69,35 @@ class ExactRotorResourceContractTest {
         }
     }
 
+    @Test
+    void exactCandidateProvidesAllConnectedGlassModels() throws IOException {
+        String configured = System.getProperty("bigReactorsJar");
+        Assumptions.assumeTrue(configured != null && !configured.isBlank());
+
+        try (ZipFile jar = new ZipFile(Path.of(configured).toFile())) {
+            for (String blockId : GlassCatalog.BLOCK_IDS) {
+                String blockPath = blockId.substring(blockId.indexOf(':') + 1);
+                JsonObject variants = json(
+                        jar,
+                        "assets/bigreactors/blockstates/" + blockPath + ".json"
+                ).getAsJsonObject("variants");
+                Set<String> expectedStates = GlassCatalog.STATES.stream()
+                        .map(state -> "facings=" + state)
+                        .collect(Collectors.toUnmodifiableSet());
+                assertEquals(expectedStates, variants.keySet());
+                for (Map.Entry<String, com.google.gson.JsonElement> entry
+                        : variants.entrySet()) {
+                    String model = entry.getValue().getAsJsonObject()
+                            .get("model").getAsString();
+                    assertTrue(model.startsWith(
+                            "bigreactors:block/turbine/"
+                    ));
+                    assertModelExists(jar, model);
+                }
+            }
+        }
+    }
+
     private static void assertModelExists(ZipFile jar, String model) {
         String namespaced = model.substring("bigreactors:".length());
         assertNotNull(jar.getEntry(

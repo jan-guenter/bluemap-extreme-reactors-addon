@@ -15,7 +15,7 @@ import io.github.janguenter.bluemap.bigreactors.profile.BigReactors12112428Profi
 
 import java.nio.file.Path;
 
-/** Exact-artifact admission and atomic installed rotor-resource routing. */
+/** Exact-artifact admission and atomic installed turbine-resource routing. */
 final class ProfileResourceExtension implements ResourcePackExtension {
 
     private final ResourcePack resourcePack;
@@ -46,7 +46,7 @@ final class ProfileResourceExtension implements ResourcePackExtension {
 
         admission = InstalledRotorResources.inspect(resourcePack);
         if (admission == null) {
-            runtime.inactive("installed-rotor-schema-invalid");
+            runtime.inactive("installed-turbine-schema-invalid");
         }
     }
 
@@ -57,16 +57,16 @@ final class ProfileResourceExtension implements ResourcePackExtension {
         }
         if (!InstalledRotorResources.bakedModelsValid(resourcePack, admission)) {
             admission = null;
-            runtime.inactive("installed-rotor-model-invalid");
+            runtime.inactive("installed-turbine-model-invalid");
             return;
         }
         if (!admission.route(renderer)) {
             admission = null;
-            runtime.inactive("rotor-routing-collision");
+            runtime.inactive("turbine-routing-collision");
             return;
         }
         runtime.activate();
-        System.out.println("BlueMap Extreme Reactors add-on active: 4 rotor blocks.");
+        System.out.println("BlueMap Extreme Reactors add-on active: 6 turbine blocks.");
     }
 
     @Override
@@ -74,9 +74,14 @@ final class ProfileResourceExtension implements ResourcePackExtension {
             BlockState blockState,
             BlockProperties.Builder builder
     ) {
-        if (runtime.active()
-                && RotorCatalog.owns(blockState.getId().getFormatted())) {
+        if (!runtime.active()) {
+            return;
+        }
+        String blockId = blockState.getId().getFormatted();
+        if (RotorCatalog.owns(blockId)) {
             builder.culling(false).occluding(false).cullingIdentical(false);
+        } else if (GlassCatalog.owns(blockId)) {
+            builder.culling(false).occluding(false).cullingIdentical(true);
         }
     }
 }

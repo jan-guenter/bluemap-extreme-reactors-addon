@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/** Restores assembled turbine rotors in a deterministic stopped pose. */
+/** Restores contextual turbine rotor and connected-glass models. */
 final class TurbineRotorRenderer implements BlockRenderer {
 
     private final ResourcePack resourcePack;
@@ -57,16 +57,17 @@ final class TurbineRotorRenderer implements BlockRenderer {
         Color initialMapColor = new Color().set(mapColor);
         try {
             String blockId = block.getBlockState().getId().getFormatted();
-            if (!RotorCatalog.owns(blockId)
+            if (!owns(blockId)
                     || fallback.getRenderer() != BlueMap522Adapter.renderer()) {
                 resources.render(block, fallback, target, mapColor);
                 return;
             }
-            String state = RotorTopology.state(
-                    blockId,
-                    (x, y, z) -> block.getNeighborBlock(x, y, z)
-                            .getBlockState().getId().getFormatted()
-            );
+            RotorTopology.NeighborLookup neighbors = (x, y, z) ->
+                    block.getNeighborBlock(x, y, z)
+                            .getBlockState().getId().getFormatted();
+            String state = RotorCatalog.owns(blockId)
+                    ? RotorTopology.state(blockId, neighbors)
+                    : TurbineGlassTopology.state(blockId, neighbors);
             resources.render(
                     block,
                     variant(blockId, state),
@@ -79,7 +80,7 @@ final class TurbineRotorRenderer implements BlockRenderer {
             target.getTileModel().reset(start);
             target.initialize(start);
             mapColor.set(initialMapColor);
-            runtime.inactive("turbine-rotor-renderer-"
+            runtime.inactive("turbine-context-renderer-"
                     + exception.getClass().getSimpleName());
             resources.render(block, fallback, target, mapColor);
         }
@@ -93,18 +94,19 @@ final class TurbineRotorRenderer implements BlockRenderer {
     }
 
     private Variant select(String blockId, String state) {
+        boolean rotor = RotorCatalog.owns(blockId);
+        de.bluecolored.bluemap.core.util.Key blockKey = rotor
+                ? RotorCatalog.blockKey(blockId) : GlassCatalog.blockKey(blockId);
         de.bluecolored.bluemap.core.resources.pack.resourcepack.blockstate.BlockState
-                definition = resourcePack.getBlockStates().get(
-                        RotorCatalog.blockKey(blockId)
-                );
+                definition = resourcePack.getBlockStates().get(blockKey);
         if (definition == null) {
-            throw new IllegalStateException("rotor blockstate disappeared");
+            throw new IllegalStateException("turbine blockstate disappeared");
         }
         List<Variant> selected = new ArrayList<>();
         definition.forEach(
                 new BlockState(
-                        RotorCatalog.blockKey(blockId),
-                        Map.of("state", state)
+                        blockKey,
+                        Map.of(rotor ? "state" : "facings", state)
                 ),
                 0,
                 0,
@@ -112,9 +114,13 @@ final class TurbineRotorRenderer implements BlockRenderer {
                 selected::add
         );
         if (selected.size() != 1) {
-            throw new IllegalStateException("rotor state no longer selects one model");
+            throw new IllegalStateException("turbine state selection changed");
         }
         return selected.getFirst();
+    }
+
+    private static boolean owns(String blockId) {
+        return RotorCatalog.owns(blockId) || GlassCatalog.owns(blockId);
     }
 
     private record ModelKey(String blockId, String state) {
