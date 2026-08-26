@@ -6,4 +6,4 @@
 - Restored the contextual basic and reinforced turbine shaft and blade models
   from stable neighbor topology in a deterministic stopped pose.
 - Added exact installed-resource admission, pure topology tests, and bounded
-  basic/reinforced rotor comparison fixtures.
+  assembled basic/reinforced turbine comparison fixtures.

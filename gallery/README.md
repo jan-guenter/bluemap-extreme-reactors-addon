@@ -1,12 +1,15 @@
-# Turbine rotor gallery
+# Assembled turbine gallery
 
-This generated gallery places stopped basic and reinforced turbine rotors. Each
-fixture has four shaft sections, long blade spans, and both perpendicular blade
-axes. A stone at `(175, 100, 171)` remains the stock rendering control.
+This generated gallery places matching, valid 5x5x5 basic and reinforced
+turbines. Each fixture has a complete same-tier shell, controller, bearing,
+three shaft sections, two four-blade planes, a Ludicrite coil ring, and glass
+on three faces. A stone at `(172, 100, 171)` remains the stock rendering
+control.
 
-The fixtures are deliberately unassembled. Extreme Reactors' client derives the
-same visible shaft and blade models from their topology, while the add-on does
-the equivalent reconstruction for BlueMap without animation or live state.
+The compact geometry stays within the Basic turbine's exact five-block X/Z
+limit. The opposite rotor endpoint remains casing, blades precede the coil
+plane, and the bearing is placed last so both fixtures assemble before review.
+The client and BlueMap therefore compare the same valid multiblock state.
 
 Stable commands:
 

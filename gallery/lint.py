@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-"""Lint the generated turbine-rotor gallery without starting Minecraft."""
+"""Lint the generated assembled-turbine gallery without starting Minecraft."""
 
 from __future__ import annotations
 
@@ -31,10 +31,12 @@ def main() -> int:
     )
     if load_tag != {"values": [f"{cases.NAMESPACE}:load"]}:
         raise ValueError("load tag differs from the exact namespace")
-    if len(cases.PLACEMENTS) != 51:
-        raise ValueError("gallery must contain exactly 51 bounded placements")
-    if len({placement.case_id for placement in cases.PLACEMENTS}) != 51:
+    if len(cases.PLACEMENTS) != 235:
+        raise ValueError("gallery must contain exactly 235 bounded placements")
+    if len({placement.case_id for placement in cases.PLACEMENTS}) != 235:
         raise ValueError("gallery case IDs must be unique")
+    if len({(p.x, p.y, p.z) for p in cases.PLACEMENTS}) != 235:
+        raise ValueError("gallery coordinates must be unique")
     stock = [
         placement
         for placement in cases.PLACEMENTS
@@ -47,8 +49,25 @@ def main() -> int:
         for placement in cases.PLACEMENTS
         if placement.expected == "contextual-static-rotor"
     ]
-    if len(contextual) != 48:
-        raise ValueError("gallery must contain 48 contextual rotor blocks")
+    if len(contextual) != 22:
+        raise ValueError("gallery must contain 22 contextual rotor blocks")
+    assembled_shell = [
+        placement
+        for placement in cases.PLACEMENTS
+        if placement.expected == "assembled-turbine-shell"
+    ]
+    if len(assembled_shell) != 196:
+        raise ValueError("gallery must contain two complete 98-block shells")
+    for tier in ("basic", "reinforced"):
+        for part in ("turbinecontroller", "turbinerotorbearing"):
+            block = f"bigreactors:{tier}_{part}"
+            if sum(p.block_state == block for p in cases.PLACEMENTS) != 1:
+                raise ValueError(f"gallery must contain one {block}")
+    if sum(
+        p.block_state == "bigreactors:ludicrite_block"
+        for p in cases.PLACEMENTS
+    ) != 16:
+        raise ValueError("gallery must contain two eight-block coil rings")
     minimum_x, minimum_y, minimum_z, maximum_x, maximum_y, maximum_z = (
         cases.ENVELOPE
     )
@@ -65,13 +84,13 @@ def main() -> int:
         path.read_text(encoding="utf-8")
         for path in sorted(function_root.glob("*.mcfunction"))
     )
-    if len(re.findall(r"^setblock ", functions, re.MULTILINE)) != 51:
-        raise ValueError("gallery must place exactly 51 blocks")
+    if len(re.findall(r"^setblock ", functions, re.MULTILINE)) != 235:
+        raise ValueError("gallery must place exactly 235 blocks")
     lowered = functions.lower()
     for forbidden in ("summon ", "data merge", "op ", "deop ", "stop "):
         if forbidden in lowered:
             raise ValueError(f"forbidden gallery command: {forbidden}")
-    print("rotor gallery lint passed: 50 fixture blocks and one stock control")
+    print("turbine gallery lint passed: two assembled fixtures and one control")
     return 0
 
 

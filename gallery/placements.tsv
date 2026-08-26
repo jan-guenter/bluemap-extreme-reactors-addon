@@ -1,52 +1,236 @@
 case_id	label	x	y	z	block_state	expected
-basic-bearing	basic rotor bearing control	170	102	164	bigreactors:basic_turbinerotorbearing	stock-visible
-basic-shaft-1	basic contextual shaft section 1	170	102	165	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
-basic-blade-1-x--1-1	basic contextual blade span	169	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-1-x--1-2	basic contextual blade span	168	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-1-x-1-1	basic contextual blade span	171	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-1-x-1-2	basic contextual blade span	172	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-shaft-2	basic contextual shaft section 2	170	102	166	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
-basic-blade-2-y--1-1	basic contextual blade span	170	101	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-2-y--1-2	basic contextual blade span	170	100	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-2-y-1-1	basic contextual blade span	170	103	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-2-y-1-2	basic contextual blade span	170	104	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-shaft-3	basic contextual shaft section 3	170	102	167	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
-basic-blade-3-x--1-1	basic contextual blade span	169	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-3-x--1-2	basic contextual blade span	168	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-3-x-1-1	basic contextual blade span	171	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-3-x-1-2	basic contextual blade span	172	102	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-3-y--1-1	basic contextual blade span	170	101	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-3-y--1-2	basic contextual blade span	170	100	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-3-y-1-1	basic contextual blade span	170	103	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-3-y-1-2	basic contextual blade span	170	104	167	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-shaft-4	basic contextual shaft section 4	170	102	168	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
-basic-blade-4-y--1-1	basic contextual blade span	170	101	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-4-y--1-2	basic contextual blade span	170	100	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-4-y-1-1	basic contextual blade span	170	103	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-basic-blade-4-y-1-2	basic contextual blade span	170	104	168	bigreactors:basic_turbinerotorblade	contextual-static-rotor
-reinforced-bearing	reinforced rotor bearing control	180	102	164	bigreactors:reinforced_turbinerotorbearing	stock-visible
-reinforced-shaft-1	reinforced contextual shaft section 1	180	102	165	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
-reinforced-blade-1-x--1-1	reinforced contextual blade span	179	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-1-x--1-2	reinforced contextual blade span	178	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-1-x-1-1	reinforced contextual blade span	181	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-1-x-1-2	reinforced contextual blade span	182	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-shaft-2	reinforced contextual shaft section 2	180	102	166	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
-reinforced-blade-2-y--1-1	reinforced contextual blade span	180	101	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-2-y--1-2	reinforced contextual blade span	180	100	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-2-y-1-1	reinforced contextual blade span	180	103	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-2-y-1-2	reinforced contextual blade span	180	104	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-shaft-3	reinforced contextual shaft section 3	180	102	167	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
-reinforced-blade-3-x--1-1	reinforced contextual blade span	179	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-3-x--1-2	reinforced contextual blade span	178	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-3-x-1-1	reinforced contextual blade span	181	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-3-x-1-2	reinforced contextual blade span	182	102	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-3-y--1-1	reinforced contextual blade span	180	101	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-3-y--1-2	reinforced contextual blade span	180	100	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-3-y-1-1	reinforced contextual blade span	180	103	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-3-y-1-2	reinforced contextual blade span	180	104	167	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-shaft-4	reinforced contextual shaft section 4	180	102	168	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
-reinforced-blade-4-y--1-1	reinforced contextual blade span	180	101	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-4-y--1-2	reinforced contextual blade span	180	100	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-4-y-1-1	reinforced contextual blade span	180	103	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-reinforced-blade-4-y-1-2	reinforced contextual blade span	180	104	168	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
-stock-control	stone stock rendering control	175	100	171	minecraft:stone	stock-visible
+basic-shell-164-100-164	basic assembled turbine shell	164	100	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-100-165	basic assembled turbine shell	164	100	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-100-166	basic assembled turbine shell	164	100	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-100-167	basic assembled turbine shell	164	100	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-100-168	basic assembled turbine shell	164	100	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-101-164	basic assembled turbine shell	164	101	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-101-165	basic assembled turbine shell	164	101	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-101-166	basic assembled turbine shell	164	101	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-101-167	basic assembled turbine shell	164	101	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-101-168	basic assembled turbine shell	164	101	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-102-164	basic assembled turbine shell	164	102	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-102-165	basic assembled turbine shell	164	102	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-102-166	basic assembled turbine shell	164	102	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-102-167	basic assembled turbine shell	164	102	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-102-168	basic assembled turbine shell	164	102	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-103-164	basic assembled turbine shell	164	103	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-103-165	basic assembled turbine shell	164	103	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-103-166	basic assembled turbine shell	164	103	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-103-167	basic assembled turbine shell	164	103	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-103-168	basic assembled turbine shell	164	103	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-104-164	basic assembled turbine shell	164	104	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-104-165	basic assembled turbine shell	164	104	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-104-166	basic assembled turbine shell	164	104	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-104-167	basic assembled turbine shell	164	104	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-164-104-168	basic assembled turbine shell	164	104	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-100-164	basic assembled turbine shell	165	100	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-100-165	basic assembled turbine shell	165	100	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-100-166	basic assembled turbine shell	165	100	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-100-167	basic assembled turbine shell	165	100	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-100-168	basic assembled turbine shell	165	100	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-101-164	basic assembled turbine shell	165	101	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-103-164	basic assembled turbine shell	165	103	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-104-164	basic assembled turbine shell	165	104	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-165-104-168	basic assembled turbine shell	165	104	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-100-164	basic assembled turbine shell	166	100	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-100-165	basic assembled turbine shell	166	100	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-100-166	basic assembled turbine shell	166	100	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-100-167	basic assembled turbine shell	166	100	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-100-168	basic assembled turbine shell	166	100	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-101-164	basic assembled turbine shell	166	101	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-103-164	basic assembled turbine shell	166	103	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-104-164	basic assembled turbine shell	166	104	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-166-104-168	basic assembled turbine shell	166	104	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-100-164	basic assembled turbine shell	167	100	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-100-165	basic assembled turbine shell	167	100	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-100-166	basic assembled turbine shell	167	100	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-100-167	basic assembled turbine shell	167	100	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-100-168	basic assembled turbine shell	167	100	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-101-164	basic assembled turbine shell	167	101	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-102-164	basic assembled turbine shell	167	102	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-103-164	basic assembled turbine shell	167	103	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-104-164	basic assembled turbine shell	167	104	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-167-104-168	basic assembled turbine shell	167	104	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-100-164	basic assembled turbine shell	168	100	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-100-165	basic assembled turbine shell	168	100	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-100-166	basic assembled turbine shell	168	100	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-100-167	basic assembled turbine shell	168	100	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-100-168	basic assembled turbine shell	168	100	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-101-164	basic assembled turbine shell	168	101	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-101-168	basic assembled turbine shell	168	101	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-102-164	basic assembled turbine shell	168	102	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-102-168	basic assembled turbine shell	168	102	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-103-164	basic assembled turbine shell	168	103	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-103-168	basic assembled turbine shell	168	103	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-104-164	basic assembled turbine shell	168	104	164	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-104-165	basic assembled turbine shell	168	104	165	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-104-166	basic assembled turbine shell	168	104	166	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-104-167	basic assembled turbine shell	168	104	167	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shell-168-104-168	basic assembled turbine shell	168	104	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-top-glass-165-165	basic assembled turbine glass	165	104	165	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-165-166	basic assembled turbine glass	165	104	166	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-165-167	basic assembled turbine glass	165	104	167	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-166-165	basic assembled turbine glass	166	104	165	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-166-166	basic assembled turbine glass	166	104	166	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-166-167	basic assembled turbine glass	166	104	167	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-167-165	basic assembled turbine glass	167	104	165	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-167-166	basic assembled turbine glass	167	104	166	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-top-glass-167-167	basic assembled turbine glass	167	104	167	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-101-165	basic assembled turbine glass	168	101	165	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-101-166	basic assembled turbine glass	168	101	166	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-101-167	basic assembled turbine glass	168	101	167	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-102-165	basic assembled turbine glass	168	102	165	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-102-166	basic assembled turbine glass	168	102	166	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-102-167	basic assembled turbine glass	168	102	167	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-103-165	basic assembled turbine glass	168	103	165	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-103-166	basic assembled turbine glass	168	103	166	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-side-glass-103-167	basic assembled turbine glass	168	103	167	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-165-101	basic assembled turbine glass	165	101	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-165-102	basic assembled turbine glass	165	102	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-165-103	basic assembled turbine glass	165	103	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-166-101	basic assembled turbine glass	166	101	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-166-103	basic assembled turbine glass	166	103	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-167-101	basic assembled turbine glass	167	101	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-167-102	basic assembled turbine glass	167	102	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-rear-glass-167-103	basic assembled turbine glass	167	103	168	bigreactors:basic_turbineglass	assembled-turbine-shell
+basic-terminal-casing	basic terminal rotor casing	166	102	168	bigreactors:basic_turbinecasing	assembled-turbine-shell
+basic-shaft-1	basic contextual shaft section 1	166	102	165	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
+basic-blade-1-west	basic contextual rotor blade	165	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-1-east	basic contextual rotor blade	167	102	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-1-down	basic contextual rotor blade	166	101	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-1-up	basic contextual rotor blade	166	103	165	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-shaft-2	basic contextual shaft section 2	166	102	166	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
+basic-blade-2-west	basic contextual rotor blade	165	102	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-2-east	basic contextual rotor blade	167	102	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-2-down	basic contextual rotor blade	166	101	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-blade-2-up	basic contextual rotor blade	166	103	166	bigreactors:basic_turbinerotorblade	contextual-static-rotor
+basic-shaft-3	basic contextual shaft section 3	166	102	167	bigreactors:basic_turbinerotorshaft	contextual-static-rotor
+basic-coil-165-101	basic ludicrite coil	165	101	167	bigreactors:ludicrite_block	stock-visible
+basic-coil-165-102	basic ludicrite coil	165	102	167	bigreactors:ludicrite_block	stock-visible
+basic-coil-165-103	basic ludicrite coil	165	103	167	bigreactors:ludicrite_block	stock-visible
+basic-coil-166-101	basic ludicrite coil	166	101	167	bigreactors:ludicrite_block	stock-visible
+basic-coil-166-103	basic ludicrite coil	166	103	167	bigreactors:ludicrite_block	stock-visible
+basic-coil-167-101	basic ludicrite coil	167	101	167	bigreactors:ludicrite_block	stock-visible
+basic-coil-167-102	basic ludicrite coil	167	102	167	bigreactors:ludicrite_block	stock-visible
+basic-coil-167-103	basic ludicrite coil	167	103	167	bigreactors:ludicrite_block	stock-visible
+basic-controller	basic assembled turbine controller	165	102	164	bigreactors:basic_turbinecontroller	assembled-turbine-shell
+basic-bearing	basic assembled turbine rotor bearing	166	102	164	bigreactors:basic_turbinerotorbearing	assembled-turbine-shell
+reinforced-shell-176-100-164	reinforced assembled turbine shell	176	100	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-100-165	reinforced assembled turbine shell	176	100	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-100-166	reinforced assembled turbine shell	176	100	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-100-167	reinforced assembled turbine shell	176	100	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-100-168	reinforced assembled turbine shell	176	100	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-101-164	reinforced assembled turbine shell	176	101	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-101-165	reinforced assembled turbine shell	176	101	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-101-166	reinforced assembled turbine shell	176	101	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-101-167	reinforced assembled turbine shell	176	101	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-101-168	reinforced assembled turbine shell	176	101	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-102-164	reinforced assembled turbine shell	176	102	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-102-165	reinforced assembled turbine shell	176	102	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-102-166	reinforced assembled turbine shell	176	102	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-102-167	reinforced assembled turbine shell	176	102	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-102-168	reinforced assembled turbine shell	176	102	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-103-164	reinforced assembled turbine shell	176	103	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-103-165	reinforced assembled turbine shell	176	103	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-103-166	reinforced assembled turbine shell	176	103	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-103-167	reinforced assembled turbine shell	176	103	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-103-168	reinforced assembled turbine shell	176	103	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-104-164	reinforced assembled turbine shell	176	104	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-104-165	reinforced assembled turbine shell	176	104	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-104-166	reinforced assembled turbine shell	176	104	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-104-167	reinforced assembled turbine shell	176	104	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-176-104-168	reinforced assembled turbine shell	176	104	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-100-164	reinforced assembled turbine shell	177	100	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-100-165	reinforced assembled turbine shell	177	100	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-100-166	reinforced assembled turbine shell	177	100	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-100-167	reinforced assembled turbine shell	177	100	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-100-168	reinforced assembled turbine shell	177	100	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-101-164	reinforced assembled turbine shell	177	101	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-103-164	reinforced assembled turbine shell	177	103	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-104-164	reinforced assembled turbine shell	177	104	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-177-104-168	reinforced assembled turbine shell	177	104	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-100-164	reinforced assembled turbine shell	178	100	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-100-165	reinforced assembled turbine shell	178	100	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-100-166	reinforced assembled turbine shell	178	100	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-100-167	reinforced assembled turbine shell	178	100	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-100-168	reinforced assembled turbine shell	178	100	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-101-164	reinforced assembled turbine shell	178	101	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-103-164	reinforced assembled turbine shell	178	103	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-104-164	reinforced assembled turbine shell	178	104	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-178-104-168	reinforced assembled turbine shell	178	104	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-100-164	reinforced assembled turbine shell	179	100	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-100-165	reinforced assembled turbine shell	179	100	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-100-166	reinforced assembled turbine shell	179	100	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-100-167	reinforced assembled turbine shell	179	100	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-100-168	reinforced assembled turbine shell	179	100	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-101-164	reinforced assembled turbine shell	179	101	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-102-164	reinforced assembled turbine shell	179	102	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-103-164	reinforced assembled turbine shell	179	103	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-104-164	reinforced assembled turbine shell	179	104	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-179-104-168	reinforced assembled turbine shell	179	104	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-100-164	reinforced assembled turbine shell	180	100	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-100-165	reinforced assembled turbine shell	180	100	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-100-166	reinforced assembled turbine shell	180	100	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-100-167	reinforced assembled turbine shell	180	100	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-100-168	reinforced assembled turbine shell	180	100	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-101-164	reinforced assembled turbine shell	180	101	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-101-168	reinforced assembled turbine shell	180	101	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-102-164	reinforced assembled turbine shell	180	102	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-102-168	reinforced assembled turbine shell	180	102	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-103-164	reinforced assembled turbine shell	180	103	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-103-168	reinforced assembled turbine shell	180	103	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-104-164	reinforced assembled turbine shell	180	104	164	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-104-165	reinforced assembled turbine shell	180	104	165	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-104-166	reinforced assembled turbine shell	180	104	166	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-104-167	reinforced assembled turbine shell	180	104	167	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shell-180-104-168	reinforced assembled turbine shell	180	104	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-top-glass-177-165	reinforced assembled turbine glass	177	104	165	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-177-166	reinforced assembled turbine glass	177	104	166	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-177-167	reinforced assembled turbine glass	177	104	167	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-178-165	reinforced assembled turbine glass	178	104	165	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-178-166	reinforced assembled turbine glass	178	104	166	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-178-167	reinforced assembled turbine glass	178	104	167	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-179-165	reinforced assembled turbine glass	179	104	165	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-179-166	reinforced assembled turbine glass	179	104	166	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-top-glass-179-167	reinforced assembled turbine glass	179	104	167	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-101-165	reinforced assembled turbine glass	180	101	165	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-101-166	reinforced assembled turbine glass	180	101	166	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-101-167	reinforced assembled turbine glass	180	101	167	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-102-165	reinforced assembled turbine glass	180	102	165	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-102-166	reinforced assembled turbine glass	180	102	166	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-102-167	reinforced assembled turbine glass	180	102	167	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-103-165	reinforced assembled turbine glass	180	103	165	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-103-166	reinforced assembled turbine glass	180	103	166	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-side-glass-103-167	reinforced assembled turbine glass	180	103	167	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-177-101	reinforced assembled turbine glass	177	101	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-177-102	reinforced assembled turbine glass	177	102	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-177-103	reinforced assembled turbine glass	177	103	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-178-101	reinforced assembled turbine glass	178	101	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-178-103	reinforced assembled turbine glass	178	103	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-179-101	reinforced assembled turbine glass	179	101	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-179-102	reinforced assembled turbine glass	179	102	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-rear-glass-179-103	reinforced assembled turbine glass	179	103	168	bigreactors:reinforced_turbineglass	assembled-turbine-shell
+reinforced-terminal-casing	reinforced terminal rotor casing	178	102	168	bigreactors:reinforced_turbinecasing	assembled-turbine-shell
+reinforced-shaft-1	reinforced contextual shaft section 1	178	102	165	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
+reinforced-blade-1-west	reinforced contextual rotor blade	177	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-1-east	reinforced contextual rotor blade	179	102	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-1-down	reinforced contextual rotor blade	178	101	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-1-up	reinforced contextual rotor blade	178	103	165	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-shaft-2	reinforced contextual shaft section 2	178	102	166	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
+reinforced-blade-2-west	reinforced contextual rotor blade	177	102	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-2-east	reinforced contextual rotor blade	179	102	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-2-down	reinforced contextual rotor blade	178	101	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-blade-2-up	reinforced contextual rotor blade	178	103	166	bigreactors:reinforced_turbinerotorblade	contextual-static-rotor
+reinforced-shaft-3	reinforced contextual shaft section 3	178	102	167	bigreactors:reinforced_turbinerotorshaft	contextual-static-rotor
+reinforced-coil-177-101	reinforced ludicrite coil	177	101	167	bigreactors:ludicrite_block	stock-visible
+reinforced-coil-177-102	reinforced ludicrite coil	177	102	167	bigreactors:ludicrite_block	stock-visible
+reinforced-coil-177-103	reinforced ludicrite coil	177	103	167	bigreactors:ludicrite_block	stock-visible
+reinforced-coil-178-101	reinforced ludicrite coil	178	101	167	bigreactors:ludicrite_block	stock-visible
+reinforced-coil-178-103	reinforced ludicrite coil	178	103	167	bigreactors:ludicrite_block	stock-visible
+reinforced-coil-179-101	reinforced ludicrite coil	179	101	167	bigreactors:ludicrite_block	stock-visible
+reinforced-coil-179-102	reinforced ludicrite coil	179	102	167	bigreactors:ludicrite_block	stock-visible
+reinforced-coil-179-103	reinforced ludicrite coil	179	103	167	bigreactors:ludicrite_block	stock-visible
+reinforced-controller	reinforced assembled turbine controller	177	102	164	bigreactors:reinforced_turbinecontroller	assembled-turbine-shell
+reinforced-bearing	reinforced assembled turbine rotor bearing	178	102	164	bigreactors:reinforced_turbinerotorbearing	assembled-turbine-shell
+stock-control	stone stock rendering control	172	100	171	minecraft:stone	stock-visible
