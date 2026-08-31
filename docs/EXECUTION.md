@@ -4,11 +4,11 @@ This repository starts inactive and stock-safe. Implement only the smallest
 observed Extreme Reactors rendering defect before staging.
 
 Before running Gradle gates, activate a Python 3.11 or newer virtual
-environment, initialize the pinned toolkit submodule, and install the exact
-development-only toolkit into the environment:
+environment, initialize the pinned toolkit and Adapter API submodules, and
+install the exact development-only toolkit into the environment:
 
 ```bash
-git submodule update --init --recursive -- tooling/bluemap-addon-toolkit
+git submodule update --init --recursive
 python -m pip install --disable-pip-version-check --no-deps \
   --require-hashes --only-binary=:all: \
   --requirement requirements/toolkit.txt
@@ -28,7 +28,7 @@ properties are:
 Then run:
 
 ```bash
-gradle --no-daemon -PbluemapSourcePath=../bluemap-backport \
+gradle --no-daemon -PbluemapSourcePath=/tmp/bluemap-backport-523-source \
   <exact-candidate-properties> clean prototypeCheck build
 bash gallery/package.sh /tmp/bigreactors-gallery.zip
 ```
@@ -58,7 +58,7 @@ Promote `addon_version` through a pull request, remove every temporary
 unimplemented scaffold marker, and run with all exact candidate properties:
 
 ```bash
-gradle --no-daemon -PbluemapSourcePath=../bluemap-backport \
+gradle --no-daemon -PbluemapSourcePath=/tmp/bluemap-backport-523-source \
   <exact-candidate-properties> -PreleaseTag=v<version> \
   clean build generatePomFileForAddonPublication \
   generateMetadataFileForAddonPublication verifyReleaseCandidate

@@ -2,7 +2,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-package io.github.janguenter.bluemap.bigreactors.adapter.bluemap522;
+package io.github.janguenter.bluemap.bigreactors.adapter.bluemap523;
 
 /** Reconstructs the client-only connected-glass state from exact neighbors. */
 final class TurbineGlassTopology {

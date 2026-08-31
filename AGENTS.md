@@ -10,7 +10,8 @@ changing it.
 - Minecraft `1.21.1`
 - NeoForge `21.1.248`
 - Java `21`
-- BlueMap `5.22-agent.backport-5.22-mc1.21.1-2`, commit `9be321df995a1103808621d529eb72773e719d4d`
+- BlueMap `5.22-feature.backport-5.23-stateless-java-web-server-46`, commit
+  `7e07f4e74ec1e92a6ead9aa1e66054af3e133aac`
 - BlueMap API commit `285c9a60eff3ac2b0cab308ce1058d1565be0971`
 - Exact profile `bigreactors-1.21.1-2.4.28`
 
@@ -22,7 +23,9 @@ Mixins, or world state.
 
 - Preserve stock rendering while the runtime/profile is absent, duplicated,
   unsupported, malformed, disabled, or not yet implemented.
-- Keep the BlueMap internal API behind `adapter/bluemap522`.
+- Keep the BlueMap internal API behind `adapter/bluemap523`.
+- Compile the four shared bootstrap sources only from the exact Adapter API
+  gitlink pinned in `settings.gradle`; never bundle its standalone JAR.
 - Keep exact candidate identities and resource contracts in the profile.
 - Keep state/NBT decoding, normalized data, and mesh emission separate.
 - Unknown family data gets one bounded diagnostic and stock fallback.
@@ -38,7 +41,8 @@ prototype phase. The release gate rejects it.
 Compile and test the safe seed:
 
 ```bash
-gradle --no-daemon -PbluemapSourcePath=../bluemap-backport clean check build
+gradle --no-daemon -PbluemapSourcePath=/tmp/bluemap-backport-523-source \
+  clean check build
 ```
 
 Verify a prototype with exact candidate JAR properties:

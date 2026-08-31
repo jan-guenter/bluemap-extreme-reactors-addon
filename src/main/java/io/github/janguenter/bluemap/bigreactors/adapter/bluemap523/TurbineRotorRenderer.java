@@ -2,7 +2,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-package io.github.janguenter.bluemap.bigreactors.adapter.bluemap522;
+package io.github.janguenter.bluemap.bigreactors.adapter.bluemap523;
 
 import de.bluecolored.bluemap.core.map.TextureGallery;
 import de.bluecolored.bluemap.core.map.hires.MaxCapacityReachedException;
@@ -58,7 +58,7 @@ final class TurbineRotorRenderer implements BlockRenderer {
         try {
             String blockId = block.getBlockState().getId().getFormatted();
             if (!owns(blockId)
-                    || fallback.getRenderer() != BlueMap522Adapter.renderer()) {
+                    || fallback.getRenderer() != BlueMap523Adapter.renderer()) {
                 resources.render(block, fallback, target, mapColor);
                 return;
             }

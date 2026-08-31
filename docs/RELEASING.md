@@ -6,6 +6,10 @@ staging comparison needed to get useful visual feedback.
 
 After the owner accepts the candidate:
 
+The current `0.1.0-alpha.2` migration candidate is deliberately unsealed. Its
+accepted artifact properties remain `PENDING` until the combined integration
+render is accepted; do not reuse the alpha.1 artifact bytes.
+
 1. Remove every temporary unimplemented scaffold marker and replace the
    stock-only gallery case with the accepted bounded fixture.
 2. Freeze the accepted staging JAR's non-manifest entry hashes in
