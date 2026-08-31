@@ -1,81 +1,151 @@
 {
   "schema_version": 1,
   "status": "owner-accepted-release-candidate",
-  "version": "0.1.0-alpha.1",
-  "release_date": "2026-08-26",
+  "version": "0.1.0-alpha.2",
+  "release_date": "2026-08-31",
   "repository": "https://github.com/jan-guenter/bluemap-extreme-reactors-addon",
-  "tag": "v0.1.0-alpha.1",
-  "maven_coordinate": "io.github.jan-guenter:bluemap-extreme-reactors-addon:0.1.0-alpha.1",
+  "tag": "v0.1.0-alpha.2",
+  "maven_coordinate": "io.github.jan-guenter:bluemap-extreme-reactors-addon:0.1.0-alpha.2",
+  "published": false,
+  "inherited_visual_acceptance": {
+    "baseline_version": "0.1.0-alpha.1",
+    "baseline_release_commit": "c6a70f0ec38e984c4c349742b921a87cd4d21e18",
+    "baseline_release_tree": "016f1c3ee894937882da677ca370a172582121ad",
+    "baseline_production_jar_size": 92010,
+    "baseline_production_jar_sha256": "60eaf0b401742fbc40a8500948234e72010b4a8224395893af8b521b2aed0d24",
+    "baseline_gallery_archive_size": 5235,
+    "baseline_gallery_archive_sha256": "ac32372112dd9455d40516b922745304ddf89393dd00d94fcce2921e57d47f1b",
+    "original_visual_acceptance": true,
+    "scope": "The exact Extreme Reactors and ZeroCore profile, contextual turbine rotor renderer, 180 installed model routes, 235-case gallery, topology rules and stock fallback are unchanged. Alpha.2 moves only the BlueMap adapter boundary and shared bootstrap helpers to their 5.23-only packages."
+  },
+  "candidate_artifacts": {
+    "production_jar": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.jar",
+      "size": 96998,
+      "sha256": "860f6254f9e716bad418a18c1fc0d9b28d3b2d94d51f605667e628532cf9e43f"
+    },
+    "sources_jar": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2-sources.jar",
+      "size": 65567,
+      "sha256": "71149223d43614eaf1343b1f895fa6cc5f4f58591ce7c125981397b438ff46d2"
+    },
+    "pom": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.pom",
+      "size": 1371,
+      "sha256": "bae8d952692523d2f31b2348a0948c5170119d74cad2a46915776d00381126da"
+    },
+    "gradle_module": {
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.module.json",
+      "size": 2880,
+      "sha256": "25c261e3fe6299cff55d1542bed55ce4409325390eddfe263b8f1ed203ae7357"
+    }
+  },
+  "exact_feature_backport_migration": {
+    "bluemap_version": "5.22-feature.backport-5.23-stateless-java-web-server-46",
+    "bluemap_commit": "7e07f4e74ec1e92a6ead9aa1e66054af3e133aac",
+    "bluemap_api_commit": "285c9a60eff3ac2b0cab308ce1058d1565be0971",
+    "tested_neoforge_jar_size": 6545661,
+    "tested_neoforge_jar_sha256": "86a0323d24f472e425dda4d4e6bba2d7d8ce8315ad009930a67131128c715e62",
+    "local_adapter_package": "io.github.janguenter.bluemap.bigreactors.adapter.bluemap523",
+    "former_local_adapter_package_present": false,
+    "former_runtime_identity_accepted": false
+  },
+  "adapter_api_migration": {
+    "repository": "https://github.com/jan-guenter/bluemap-addon-adapter-api",
+    "version": "0.1.0-alpha.2",
+    "tag": "v0.1.0-alpha.2",
+    "release_target_commit": "e81f08bc4bfbf02d810ec8949a019130e2e61634",
+    "source_tree": "2f974c9bb2ba13888d69682f86f30f58922d30eb",
+    "bluemap_commit": "7e07f4e74ec1e92a6ead9aa1e66054af3e133aac",
+    "compiled_source_count": 4,
+    "replaced_local_helpers": [
+      "AdapterCompatibility",
+      "ProfileResourceExtensionType",
+      "RegistryGuard"
+    ],
+    "standalone_module_jar_bundled": false,
+    "standalone_module_jar_installed": false
+  },
+  "preserved_contract": {
+    "routed_block_count": 6,
+    "routed_variant_count": 180,
+    "gallery_review_cases": 235,
+    "gallery_sources_changed": false,
+    "runtime_profile_and_renderer_behavior_changed": false,
+    "stock_fallback_changed": false
+  },
+  "verification": {
+    "exact_input_gate": true,
+    "production_archive_boundary_gate": true,
+    "sources_archive_boundary_gate": true,
+    "adapter_api_migration_boundary_gate": true,
+    "exact_feature_backport_runtime_identity_gate": true,
+    "gradle_9_6_1_clean_builds": 1,
+    "consumer_tests_passed": 16,
+    "gallery_lint": true,
+    "checkstyle": true,
+    "release_candidate_gate": true,
+    "staged_equivalence": true
+  },
   "owner_accepted_staging": {
-    "accepted_at": "2026-08-26",
-    "commit": "33aaccd0ddc1e54dc1a767768e59ef99d90b2ba3",
-    "tree": "bb930994bb686556c9940ca88af127f9db5c32c5",
-    "production_jar_size": 92011,
-    "production_jar_sha256": "b5442504b0320b971328304c6533c2e69bfd311080698af5caee10a038d6f4f7",
-    "accepted_at_map": "bigreactors_review",
-    "visual_acceptance": true
+    "visual_acceptance": true,
+    "accepted_on": "2026-08-31",
+    "scope": "Owner accepted the basic and reinforced turbine fixtures after the aggregate Camol delegated-renderer correction. This acceptance does not expand the add-on to reactor glass.",
+    "integration_run": "bluemap-atmons-integration-20260831-tech-batch-523-native",
+    "candidate_manifest": {
+      "sha256": "5b42eb108509c0c497c29c933d2a6a242a6a9b2f602957d258c90fb29e2a4c8c",
+      "local_candidate_base_source_commit": "5544544d7ac7d194baca8c57beb9c482c3851de0",
+      "local_candidate_base_artifact": {
+        "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.jar",
+        "size": 96998,
+        "sha256": "860f6254f9e716bad418a18c1fc0d9b28d3b2d94d51f605667e628532cf9e43f"
+      },
+      "aggregate_staging_artifact": {
+        "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1.jar",
+        "size": 97369,
+        "sha256": "b1c5f33e25d805d5a84ee2abca11301ebb18f08aa10dbafdffa78a9087dff007"
+      }
+    },
+    "gallery_render": {
+      "map_id": "atmons_integration",
+      "composition_id": "4c1139e67bee1f570824ac90bdc12a4331381946acf4cd593609c51c3a4c894a",
+      "layout_sha256": "5ea9a96c5e5b159057441a6eb6fbfdbf47aa06b95dadfcb2756246b117a04944",
+      "fresh_tile_evidence_sha256": "a9d997a033aa422cab225fbf058a25a4011e06c25889121770f9378edba0c69b",
+      "region_count": 4,
+      "tile_count": 589
+    },
+    "browser_capture": {
+      "state_sha256": "cbc1a6517f8979539b36e129145a6470ecba7a14f557240c8da4fef54db41104",
+      "screenshot_sha256": "db473d1b6b877afeff9d35fce870f557d13f908d96c26fdef483210274627c31",
+      "navigation_status": 200,
+      "context_lost": false
+    }
   },
   "accepted_staging_entries": {
     "path": "provenance/accepted-staging-entries.sha256",
-    "entry_count": 31,
-    "sha256": "404b6e50dc10699b04c36e3f0c486a79327a8728015db32ad3413080aa3a893c"
+    "entry_count": 32,
+    "sha256": "cf12e9159a7c27db32f7ee24e91ef645b5c7545b84b445e46722d5b38055d237"
   },
   "final_release_artifacts": {
     "production_jar": {
-      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1.jar",
-      "size": 92010,
-      "sha256": "60eaf0b401742fbc40a8500948234e72010b4a8224395893af8b521b2aed0d24"
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.jar",
+      "size": 96998,
+      "sha256": "860f6254f9e716bad418a18c1fc0d9b28d3b2d94d51f605667e628532cf9e43f"
     },
     "sources_jar": {
-      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1-sources.jar",
-      "size": 60879,
-      "sha256": "10eefcfc78fb589cb157b11e84026463cf59937aa6508ff42b719f42dcad7774"
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2-sources.jar",
+      "size": 65567,
+      "sha256": "71149223d43614eaf1343b1f895fa6cc5f4f58591ce7c125981397b438ff46d2"
     },
     "pom": {
-      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1.pom",
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.pom",
       "size": 1371,
-      "sha256": "bd8a6380c0ae036e2523d843957c8bdbdb9d876d071aba229daee3af2d832baa"
+      "sha256": "bae8d952692523d2f31b2348a0948c5170119d74cad2a46915776d00381126da"
     },
     "gradle_module": {
-      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.1.module.json",
+      "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.module.json",
       "size": 2880,
-      "sha256": "7e5de5c86484e0d3ce5ae6e97ad8e81de9235e573e98109de3a7f5290bc2fde0"
+      "sha256": "25c261e3fe6299cff55d1542bed55ce4409325390eddfe263b8f1ed203ae7357"
     }
-  },
-  "staged_equivalence": {
-    "entry_manifest": "provenance/accepted-staging-entries.sha256",
-    "identical_non_manifest_entries": 31,
-    "whole_jar_byte_identical": false,
-    "only_changed_entry_bytes": "META-INF/MANIFEST.MF",
-    "change_reason": "Implementation-Version changed from the accepted SNAPSHOT marker to the final release version."
-  },
-  "gallery": {
-    "archive_file_name": "bigreactors-gallery.zip",
-    "size": 5235,
-    "sha256": "ac32372112dd9455d40516b922745304ddf89393dd00d94fcce2921e57d47f1b",
-    "review_cases": 235,
-    "published_as_release_asset": false
-  },
-  "ephemeral_ci_inputs": {
-    "bigreactors": {
-      "curseforge_project": 250277,
-      "curseforge_file": 7344744,
-      "size": 2554779,
-      "sha256": "74fdfdfc91c3c8e5a439d411e6f081d12193635fffe2c55142f2f28f75b9d621"
-    },
-    "zerocore": {
-      "curseforge_project": 247921,
-      "curseforge_file": 7344742,
-      "size": 1551013,
-      "sha256": "54ac755031b05c3a5b6ddfa22dabc45fb3775481041503dcecd75e5e86627779"
-    },
-    "policy": "Downloaded only into the ephemeral runner, verified before use, and never bundled or uploaded."
-  },
-  "verification": {
-    "production_jar_exact_byte_gate": true,
-    "sources_jar_exact_byte_gate": true,
-    "publication_metadata_exact_byte_gate": true,
-    "staged_equivalence_gate": true,
-    "exact_input_gate": true
   }
 }

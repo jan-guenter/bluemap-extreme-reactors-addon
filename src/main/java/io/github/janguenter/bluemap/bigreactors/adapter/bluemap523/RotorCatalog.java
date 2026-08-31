@@ -2,7 +2,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-package io.github.janguenter.bluemap.bigreactors.adapter.bluemap522;
+package io.github.janguenter.bluemap.bigreactors.adapter.bluemap523;
 
 import de.bluecolored.bluemap.core.util.Key;
 

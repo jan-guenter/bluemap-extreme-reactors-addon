@@ -3,7 +3,9 @@
 A Java 21 BlueMap add-on for the exact `bigreactors-1.21.1-2.4.28` profile in All the Mons
 `1.2.0` / Minecraft `1.21.1`.
 
-Status: owner-accepted `0.1.0-alpha.1` release candidate. The exact artifact
+Status: owner-accepted `0.1.0-alpha.2` BlueMap 5.23 release candidate. It
+inherits the accepted `0.1.0-alpha.1` turbine and gallery behavior; only the
+BlueMap adapter boundary and shared bootstrap helpers changed. The exact artifact
 gate admits only Extreme Reactors `1.21.1-2.4.28` with ZeroCore `1.21.1-2.4.21`.
 For basic and reinforced turbine shafts, blades, and glass, the renderer
 reconstructs the client-only neighbor state. It displays the installed rotor
@@ -13,16 +15,20 @@ connected-glass models.
 ## Build
 
 Clone with `--recurse-submodules`, or initialize an existing checkout with
-`git submodule update --init --recursive -- tooling/bluemap-addon-toolkit`.
-The settings preflight accepts only the committed toolkit gitlink at commit
-`6cd34a8368cc4ee8628fbe830a90ec5b14960629` and rejects an uninitialized,
-changed, or dirty toolkit checkout.
+`git submodule update --init --recursive`. The settings preflight accepts only
+the committed toolkit and Adapter API gitlinks, including Adapter API commit
+`e81f08bc4bfbf02d810ec8949a019130e2e61634` and source tree
+`2f974c9bb2ba13888d69682f86f30f58922d30eb`, and rejects uninitialized,
+changed, or dirty submodule checkouts.
 
 ```bash
-gradle --no-daemon -PbluemapSourcePath=../bluemap-backport clean check build
+gradle --no-daemon -PbluemapSourcePath=/tmp/bluemap-backport-523-source \
+  clean check build
 ```
 
-`check` is the quick Java/checkstyle/archive gate. `prototypeCheck` additionally
+The four Adapter API sources are compiled directly into this standalone add-on;
+no Adapter API JAR is needed at runtime. `check` is the quick
+Java/checkstyle/archive gate. `prototypeCheck` additionally
 requires every exact candidate JAR property and validates the placeholder
 gallery. See `provenance/upstreams.json` for immutable artifact identities and
 the [execution guide](docs/EXECUTION.md) for the prototype-to-release loop.
