@@ -21,23 +21,23 @@
   "candidate_artifacts": {
     "production_jar": {
       "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.jar",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 96998,
+      "sha256": "860f6254f9e716bad418a18c1fc0d9b28d3b2d94d51f605667e628532cf9e43f"
     },
     "sources_jar": {
       "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2-sources.jar",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 65567,
+      "sha256": "71149223d43614eaf1343b1f895fa6cc5f4f58591ce7c125981397b438ff46d2"
     },
     "pom": {
       "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.pom",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 1371,
+      "sha256": "bae8d952692523d2f31b2348a0948c5170119d74cad2a46915776d00381126da"
     },
     "gradle_module": {
       "file_name": "bluemap-extreme-reactors-addon-0.1.0-alpha.2.module.json",
-      "size": 0,
-      "sha256": "PENDING"
+      "size": 2880,
+      "sha256": "25c261e3fe6299cff55d1542bed55ce4409325390eddfe263b8f1ed203ae7357"
     }
   },
   "exact_feature_backport_migration": {
@@ -75,13 +75,14 @@
     "stock_fallback_changed": false
   },
   "verification": {
-    "exact_input_gate": false,
-    "production_archive_boundary_gate": false,
-    "sources_archive_boundary_gate": false,
-    "adapter_api_migration_boundary_gate": false,
-    "exact_feature_backport_runtime_identity_gate": false,
-    "gradle_9_6_1_clean_builds": 0,
-    "gallery_lint": false,
-    "checkstyle": false
+    "exact_input_gate": true,
+    "production_archive_boundary_gate": true,
+    "sources_archive_boundary_gate": true,
+    "adapter_api_migration_boundary_gate": true,
+    "exact_feature_backport_runtime_identity_gate": true,
+    "gradle_9_6_1_clean_builds": 1,
+    "consumer_tests_passed": 16,
+    "gallery_lint": true,
+    "checkstyle": true
   }
 }
