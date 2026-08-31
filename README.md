@@ -3,7 +3,7 @@
 A Java 21 BlueMap add-on for the exact `bigreactors-1.21.1-2.4.28` profile in All the Mons
 `1.2.0` / Minecraft `1.21.1`.
 
-Status: unpublished `0.1.0-alpha.2` BlueMap 5.23 migration candidate. It
+Status: owner-accepted `0.1.0-alpha.2` BlueMap 5.23 release candidate. It
 inherits the accepted `0.1.0-alpha.1` turbine and gallery behavior; only the
 BlueMap adapter boundary and shared bootstrap helpers changed. The exact artifact
 gate admits only Extreme Reactors `1.21.1-2.4.28` with ZeroCore `1.21.1-2.4.21`.
